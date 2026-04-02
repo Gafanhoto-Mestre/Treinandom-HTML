@@ -1,10 +1,8 @@
 @charset "UTF-8";
 
-body{
-    background-color: bisque;
-}
 
 main{
+    background-color: bisque;
     min-width: 700px;
     padding: 5px;
     border-radius: 15px;
