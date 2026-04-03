@@ -1,14 +1,44 @@
 @charset "UTF-8";
 
+/* Importar uma fonte do google */
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@1,300&display=swap');
+
+/* Importar fonte baixada */
+@font-face {
+    font-family: 'Pessoal';
+    src: url(../fonts/Penmanship.otf) format(opentype), url(../fonts/Penmanship.ttf) format(truetype);
+    
+}
+
+:root{
+    --fonte_google: "Iosevka Charon Mono", monospace;
+    --fonte_pessoal: "Pessoal";
+    --cor1: orange;
+}
+
+
 
 main{
     background-color: bisque;
-    min-width: 700px;
+    min-width: 400px;
     padding: 5px;
     border-radius: 15px;
     border: 1px solid black;
     max-width: 700px;
     margin: auto;
+}
+
+h1, h2{
+    /* var(cor1) é o laranjado do :root */
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-family: var(--fonte_google);
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 5px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8em;
 }
 
 section.imagem{
